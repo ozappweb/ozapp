@@ -1,0 +1,86 @@
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Üst Menü */
+header {
+    background-color: #CDDC39;
+    color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Hero Bölümü */
+.hero {
+    background: #8BC34A;
+    color: white;
+    padding: 50px 20px;
+}
+
+/* AdSense Reklam Alanı */
+.adsense {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 80%;
+}
+
+/* Hizmetler */
+#hizmetler {
+    padding: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    background: #FFEB3B;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Hakkımızda ve İletişim */
+#hakkimizda, #iletisim {
+    padding: 40px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+}
