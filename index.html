@@ -7,10 +7,121 @@
     <title>OzApp - Mobilin Öz Dünyası</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Genel Stiller */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #202225;
+            color: white;
+        }
+
+        /* Header (Üst Menü) */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #2F3136;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #7289DA;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #7289DA;
+        }
+
+        /* Hero (Giriş Bölümü) */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to right, #2F3136, #202225);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        /* Hizmetler Bölümü */
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background: #2F3136;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer (Alt Kısım) */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2F3136;
+            color: white;
+            margin-top: 50px;
+        }
+
+        /* Mobil Uyumluluk */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                padding-top: 10px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Üst Menü -->
     <header>
         <div class="logo">OzApp</div>
         <nav>
@@ -23,14 +134,11 @@
         </nav>
     </header>
 
-    <!-- Ana Sayfa Hero Bölümü -->
     <section class="hero">
         <h1>Mobilin Öz Dünyası</h1>
         <p>Yenilikçi ve yaratıcı mobil uygulamalar geliştiriyoruz.</p>
-        <a href="#hizmetler" class="btn">Keşfet</a>
     </section>
 
-    <!-- Hizmetler Bölümü -->
     <section id="hizmetler" class="services">
         <div class="service">
             <h3>🚀 Mobil Uygulama Geliştirme</h3>
@@ -46,21 +154,12 @@
         </div>
     </section>
 
-    <!-- İletişim Bölümü -->
-    <section id="iletisim">
-        <h2>İletişim</h2>
-        <p>Bize ulaşmak için aşağıdaki bilgileri kullanabilirsiniz:</p>
-        <p><strong>E-posta:</strong> <a href="mailto:info@ozapp.store">info@ozapp.store</a></p>
-        <p><strong>Telefon:</strong> +90 555 555 55 55</p>
-        <p><strong>Adres:</strong> İstanbul, Türkiye</p>
-    </section>
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2025 OzApp - Tüm Hakları Saklıdır.</p>
     </footer>
 
 </body>
 </html>
+
 
 
