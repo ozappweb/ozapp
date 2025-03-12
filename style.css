@@ -1,23 +1,23 @@
-/* Genel Ayarlar */
+/* Genel Stiller */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    text-align: center;
+    color: #333;
 }
 
-/* Üst Menü */
+/* Header */
 header {
-    background-color: #CDDC39;
-    color: #333;
-    padding: 15px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
-.logo {
+header .logo {
     font-size: 24px;
     font-weight: bold;
 }
@@ -25,62 +25,83 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
 }
 
 /* Hero Bölümü */
 .hero {
-    background: #8BC34A;
+    text-align: center;
+    padding: 100px 20px;
+    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center/cover;
     color: white;
-    padding: 50px 20px;
 }
 
-/* AdSense Reklam Alanı */
-.adsense {
-    background: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    text-align: center;
-    border: 1px solid #ddd;
-    width: 80%;
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
 }
 
 /* Hizmetler */
-#hizmetler {
-    padding: 40px;
-}
-
 .services {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    padding: 50px;
+    flex-wrap: wrap;
 }
 
 .service {
-    background: #FFEB3B;
+    background: white;
     padding: 20px;
+    margin: 10px;
     border-radius: 10px;
-    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
 }
 
-/* Hakkımızda ve İletişim */
-#hakkimizda, #iletisim {
-    padding: 40px;
+.service h3 {
+    color: #2a5298;
+}
+
+/* İletişim */
+#iletisim {
+    text-align: center;
+    padding: 50px;
+    background: #2a5298;
+    color: white;
+}
+
+#iletisim a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Footer */
 footer {
-    background: #333;
+    text-align: center;
+    padding: 20px;
+    background: #1e3c72;
     color: white;
-    padding: 15px;
 }
+
