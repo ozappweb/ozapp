@@ -1,98 +1,128 @@
 /* Genel Stiller */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #18191C;
+    color: #FFFFFF;
 }
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
-    color: white;
+    background: #202225;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header .logo {
     font-size: 24px;
     font-weight: bold;
+    color: #7289DA;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
     padding: 0;
     margin: 0;
-    display: flex;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 nav ul li a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    color: #7289DA;
 }
 
 /* Hero Bölümü */
 .hero {
     text-align: center;
-    padding: 100px 20px;
-    background: url('https://source.unsplash.com/1600x900/?technology') no-repeat center/cover;
+    padding: 150px 20px;
+    background: linear-gradient(135deg, #5865F2, #7289DA);
     color: white;
 }
 
 .hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero .cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.hero .cta a {
+    background: #7289DA;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
     font-size: 18px;
+    margin: 10px;
+    transition: background 0.3s;
+}
+
+.hero .cta a:hover {
+    background: #5b6eae;
 }
 
 /* Hizmetler */
 .services {
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 80px 50px;
+    text-align: center;
+    background: #2C2F33;
 }
 
 .service {
-    background: white;
-    padding: 20px;
-    margin: 10px;
+    background: #202225;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
 }
 
 .service h3 {
-    color: #2a5298;
+    color: #7289DA;
 }
 
 /* İletişim */
 #iletisim {
     text-align: center;
-    padding: 50px;
-    background: #2a5298;
+    padding: 80px;
+    background: #18191C;
     color: white;
 }
 
 #iletisim a {
-    color: #ffcc00;
+    color: #7289DA;
     text-decoration: none;
     font-weight: bold;
 }
@@ -101,7 +131,8 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: #1e3c72;
+    background: #202225;
     color: white;
 }
+
 
